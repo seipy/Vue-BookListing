@@ -1,11 +1,12 @@
 <template>
-  <li <li v-for="book in books" :key="book.title">
+  <li>
     {{ book.title }} : {{ book.author }}
   </li>
 </template>
 
 <script>
 export default {
+  name: 'BookItem',
   data() {
     return {
       name: 'BookItem',
